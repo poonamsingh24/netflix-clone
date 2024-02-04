@@ -1,0 +1,49 @@
+@media screen and (max-width: 900px) {
+  .container {
+    padding: 0 2rem;
+  }
+  .navbar {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  h5 {
+    text-align: center;
+  }
+  .container {
+    padding: 0 1rem;
+    margin: auto;
+  }
+  .navbar {
+    padding-top: 3rem;
+    text-align: center;
+  }
+
+  .subscribe-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .subscribe-form button {
+    width: 100%;
+  }
+
+  .featured-wraper {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 0;
+  }
+  .featured-title h4 {
+    padding: 1rem 1rem;
+    text-align: center;
+  }
+  .footer-wraper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

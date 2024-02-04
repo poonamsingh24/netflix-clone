@@ -1,0 +1,351 @@
+:root {
+  --primary-color: rgb(209, 9, 28);
+  --text-color: #fff;
+  --text-gray: #333;
+  --text-color2: #c5bbbb;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  background-color: black;
+  color: white;
+  position: relative;
+}
+/* typography */
+h1 {
+  font-size: 5rem;
+  line-height: 1.4;
+}
+h4 {
+  font-size: 2.5rem;
+  font-weight: 350;
+}
+h5 {
+  font-size: 1.999rem;
+  font-weight: 400;
+}
+/* lang */
+.lang {
+  height: 35px;
+  width: 130px;
+}
+.lang form {
+  position: relative;
+}
+.lang form select {
+  color: var(--text-color);
+  width: 100%;
+  height: 35px;
+  padding: 0 1rem 0 3rem;
+  border-radius: 5px;
+  font-weight: 600;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--text-color);
+}
+.lang form select option {
+  color: var(--text-gray);
+}
+
+.lang form i {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+}
+.btn {
+  padding: 0 2rem;
+  color: white;
+  border-radius: 3px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: capitalize;
+  transition: all 0.3s ease-out;
+  border: 1px solid transparent;
+}
+.btn-lg {
+  font-size: 2rem;
+}
+.btn-primary {
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+}
+.btn-primary:hover {
+  background-color: rgb(176, 5, 13);
+}
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid var(--text-gray);
+  margin-right: 2rem;
+}
+.border-fill {
+  border-bottom: 10px solid var(--text-gray);
+}
+/* container */
+.container {
+  max-width: 1080px;
+  margin: auto;
+  padding: 0 1rem;
+}
+/* header section */
+.navbar {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  right: 0;
+}
+.header-btn {
+  display: flex;
+  gap: 2rem;
+}
+.header-logo {
+  width: 120px;
+}
+.header-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* hero section */
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.hero-bg {
+  height: 100vh;
+}
+.hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  background: rgb(3, 21, 5);
+  background: linear-gradient(
+    0deg,
+    rgba(3, 21, 5, 0) 0%,
+    rgba(0, 0, 0, 0.5) 48%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.hero-wraper {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-wraper h1 {
+  margin-bottom: 1rem;
+}
+.hero-wraper h4 {
+  margin-bottom: 1.5rem;
+}
+.hero-wraper h5 {
+  margin-bottom: 1rem;
+}
+.subscribe-form {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.subscribe-form input,
+.subscribe-form button {
+  height: 50px;
+  padding: 0.3rem 2rem;
+  border-radius: 3px;
+}
+.subscribe-form input {
+  border: 1px solid #ddd;
+  background: transparent;
+  width: 300px;
+}
+.subscribe-form input::placeholder {
+  color: #ddd;
+}
+.subscribe-form .group-input {
+  position: relative;
+}
+.subscribe-form .group-input span {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  display: none;
+  color: var(--text-gray);
+}
+
+.subscribe-form button {
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+/* featured */
+.featured {
+  background-color: black;
+}
+.featured-wraper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 5rem;
+  margin: 7rem auto;
+}
+.featured-title h1 {
+  margin-bottom: 20px;
+}
+
+.featured-image {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+.featured-video {
+  position: absolute;
+  width: 100%;
+  max-width: 73%;
+  top: 21%;
+  left: 13%;
+  z-index: -1;
+}
+.featured-video-2 {
+  width: 100%;
+  max-width: 70%;
+  position: absolute;
+  top: 12%;
+  left: 18%;
+  z-index: -1;
+}
+.featured-video video,
+.featured-video-2 video,
+.featured-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.featured-download {
+  max-width: 350px;
+  margin: auto;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 1rem;
+  background-color: #000;
+  border-radius: 10px;
+  border: 2px solid var(--text-gray);
+  position: relative;
+  bottom: 130px;
+}
+.featured-download i {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  font-size: 1.8rem;
+  color: dodgerblue;
+}
+.featured-download span {
+  color: dodgerblue;
+  font-size: 1.2rem;
+}
+.download-featured-image {
+  width: 50px;
+}
+/* faq wraper */
+.faq-title {
+  margin: 5rem 0 3rem 0;
+  text-align: center;
+}
+.faq-wraper {
+  margin-bottom: 2rem;
+}
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--text-gray);
+  padding: 2.5rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.faq-header i {
+  font-size: 2rem;
+}
+.faq-header:hover {
+  background-color: #434141;
+}
+.faq-contant {
+  padding: 2.5rem;
+  background-color: var(--text-gray);
+  margin-top: 1px;
+  display: none;
+}
+.email-subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+  gap: 1rem;
+}
+/* footer */
+.footer-title {
+  margin-top: 7rem;
+}
+.footer-wraper {
+  width: 100%;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+  padding: 2rem 0;
+}
+.footer-title a {
+  color: var(--text-color);
+}
+
+.footer-links a {
+  display: flex;
+  flex-direction: column;
+  color: var(--text-color2);
+  font-size: 16px;
+  gap: 5rem;
+  padding: 1rem;
+}
+
+.footer-location {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  color: var(--text-color2);
+}
